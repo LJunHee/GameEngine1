@@ -12,7 +12,7 @@ public class Script06 : MonoBehaviour
     }
     void Start()
     {
-        float ret = Inchchange(inch);
-        Debug.Log(ret + "cm");
+        float change = Inchchange(inch);
+        Debug.Log(change + "cm");
     }
 }
