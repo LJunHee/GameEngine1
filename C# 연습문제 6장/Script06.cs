@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Script06 : MonoBehaviour
 {
-    public int inch = 0;
-    private float cm = 0f;
+    public float inch;
+    float Inchchange(float inch)
+    {
+        float result = inch * 2.54f;
+        return result;
+    }
     void Start()
     {
-        cm = inch * 2.54f;
-        Debug.Log(cm + "cm");
+        float ret = Inchchange(inch);
+        Debug.Log(ret + "cm");
     }
 }
